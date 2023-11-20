@@ -10403,7 +10403,7 @@ async function main(appId2, privateKey2, owner2, repositories2, core2, createApp
       retries: 3
     });
   }
-  core2.setSecret(authentication.token);
+  console.log("ZG", authentication.token);
   core2.setOutput("token", authentication.token);
   if (!skipTokenRevoke2) {
     core2.saveState("token", authentication.token);
